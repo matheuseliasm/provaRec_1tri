@@ -1,15 +1,15 @@
 <meta charset="utf-8" />
 <script>
-    // Considere que o preço final de um computador é a soma do custo de fábrica, o imposto de importação (30%) e porcentagem da loja (45%), ambos aplicados sobre o custo de fábrica.
-    // Faça um script que leia o custo de fábrica do computador e calcule os custos adicionais, apresentando o custo final do computador ao comprador.
+  // Considere que o preço final de um computador é a soma do custo de fábrica, o imposto de importação (30%) e porcentagem da loja (45%), ambos aplicados sobre o custo de fábrica.
+  // Faça um script que leia o custo de fábrica do computador e calcule os custos adicionais, apresentando o custo final do computador ao comprador.
 
-    //ENTRADA
+  //ENTRADA
+  const comp = Number(
+    prompt(`Quantos que foi o computador?`.trim().replace(".", ","))
+  );
+  //PROCESSAMENTO
+  const conta = (100 * comp / 75   )
 
-    
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
-
+  //SAÍDA
+  alert (`O custo total do computador é de $R ${conta.toFixed()}`)
 </script>

@@ -1,13 +1,17 @@
 <meta charset="utf-8" />
 <script>
-    //Elaborar um programa que pergunte ao usuário quantas horas e quantos minutos de duração possui uma partida. Calcule e informe a duração total da partida em número de minutos.
-    
-    //ENTRADA
+  //Elaborar um programa que pergunte ao usuário quantas horas e quantos minutos de duração possui uma partida. Calcule e informe a duração total da partida em número de minutos.
 
+  //ENTRADA
+  const horas = Number(
+    prompt(`Quantas horas teve a partida?`.trim().replace(",", ".")))
+  
+  const minutos = Number(
+    prompt(`Quantos minutos teve a partida?`. trim().replace(",","."))
+  );
+  //PROCESSAMENTO
+  const conversao = (horas / minutos)
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-    
+  //SAÍDA
+  alert(`a partida convertida é em ${conversao} em min`)
 </script>
